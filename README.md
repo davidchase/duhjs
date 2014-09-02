@@ -19,10 +19,31 @@ Variables
 // one var per line
 var foo;
 var bar = 0;
-var foobar = 'some string';
+var fooBar = 'some string';
 ```
 
 Easy to read, don't care about saving a few keys.
+
+Naming
+------
+```js
+// I like camelCase for functions and variables
+// and PascalCase for longer constructors, etc
+
+// function or variable
+var fooBar;
+
+// "long" constructor
+var EventEmitter = function(){
+    this.events;
+}
+
+// regular constructor
+var Student = function(){
+    this.name;
+}
+
+```
 
 Functions
 ---------
@@ -37,5 +58,17 @@ var baz = function(){};
 // then use :)
 foo();
 baz();
+```
+It makes sense to first create something or require something before using it.
+
+
+Requires
+--------
+```js
+// Requires on top just like functions
+// commonjs FTW
+var http = require('http');
+var cluster = require('cluster');
+var someFunction = require('./lib/someFunction');
 
 ```
