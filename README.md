@@ -3,6 +3,8 @@ Duh.js
 
 Straightforward Style Guide for Javascript.
 
+After reading this all that should come to your mind is `Duh`.
+
 Why?
 ---
 Yes everyone and their neighbor has one, so why not another one.
@@ -44,6 +46,9 @@ var Student = function(){
 }
 
 ```
+
+It easy to read and understand, and keeps the constructor capitalize 
+first letter true to form. EventEmitter is prettier than Eventemitter... but thats just me
 
 Functions
 ---------
