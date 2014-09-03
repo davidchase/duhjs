@@ -31,6 +31,33 @@ If you are into closures to avoid global messiness then do
 
 })();
 ```
+Strict Equality
+---------------
+```js
+// This is pretty obvious
+// when testing for equality
+if (x === y) {
+    return true;
+}
+// or inequality
+if (x !== y) {
+    return true;
+}
+```
+
+Curliness
+----------
+```js
+// Use {} no matter how small the context
+// notice the placement of the brackets, doesn't that look pretty :)
+// works the same for functions...
+
+if (true) {
+    return 'its true';
+}
+
+```
+
 
 Naming
 ------
