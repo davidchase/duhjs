@@ -149,6 +149,25 @@ Robot.prototype.getAge = function(){
     return this.age;
 }
 
+Robot.prototype.beepBoop = function(){
+    return 'beep beep boop';  
+};
+
 // export that goodness
 module.exports = Robot;
+
+// If you want you can do
+// this organize the prototypes in a literal
+// but don't forget to set the constructor otherwise it will point to native `Object`
+
+Robot.prototype = {
+    constructor: Robot,
+    getAge = function(){
+        return this.age;
+    },
+    beepBoop = function(){
+        return 'beep beep boop';  
+    }
+}
+
 ```
